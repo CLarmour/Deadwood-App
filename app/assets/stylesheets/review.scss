@@ -1,0 +1,50 @@
+// Place all the styles related to the review controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+html,body {
+  font-family: Verdana;
+  padding: 1em 2em;
+  font-size: 18px;
+  background: #000000;
+}
+
+h1 {
+  font-size: 3.5em;
+  font-weight: 200;
+  margin: 0.4em 0;
+}
+
+.introtext {
+  font-family: Verdana;
+}
+
+.fillertext {
+  font-family: Verdana;
+}
+
+body {
+  transform: rotate(-5deg);
+}
+
+.slashed {
+  absolute: top 0 left 0 right 0 bottom 0;
+  text-shadow: 3px 3px 3px rgba(black, 0.5);
+  .top, .bot {
+    font: 62px/100px Verdana;
+    text-transform: lowercase;
+    text-align: center;
+    overflow: hidden;
+    color: red;
+    &:before {
+      content: attr(title);
+      transform: rotate(5deg);
+    }
+  }
+  .top {
+    absolute: top 0 left 5px right 0 bottom 50%;
+    &:before {
+      absolute: bottom -50px left 0 right 0;
+    }
+  }
+}
